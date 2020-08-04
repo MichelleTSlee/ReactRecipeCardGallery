@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './styles.css';
+
+const img = "https://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+  <h1 className="header"> I love the following:</h1>
+
+  <ul>
+  <li>Coffee</li>
+  <li>Wine</li>
+  <li>Biscuits</li>
+  </ul>
+  <div>
+    <img src={img} alt ="flower"/>
+  </div>
+
+
+  <p>Created by {`${fName} ${lName}`} </p>
+  <p>Copyright {year}</p>
+  </div>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
