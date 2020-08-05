@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7d9;
+  background-color: #ffcb8e;
 }
 
 .flex-container {
@@ -8,8 +8,8 @@ body {
 
 .card {
   border-radius: 20px;
-  background-color: #ed6663;
-  color: white;
+  background-color: #fce2ce;
+  color: #00b7c2;
   text-align: center;
   width: 30%;
   height: 75%;
@@ -26,13 +26,8 @@ img {
 
 
 .details {
-  background-color: #ffcb8e;
-  color: #ed6663;
-  width: 75%;
-  border-radius: 40px;
-  margin-left: 12%;
-}
-
-.details .email {
-  padding-top: 10px;
+  background-color: #e97171;
+  color: white;
+  width: 90%;
+  margin-left: 5%;
 }

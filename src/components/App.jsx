@@ -1,21 +1,20 @@
 import React from 'react';
 import Card from './Card';
-import contacts from '../contacts';
+import recipes from '../recipes';
 
-function createCard(contact) {
+function createCard(recipe) {
   return <Card
-  key = {contact.id}
-  name={contact.name}
-  img = "https://picsum.photos/200"
-  email = {contact.email}
-  tel = {contact.tel}
+  key = {recipe.id}
+  name={recipe.name}
+  img = {recipe.img}
+  details = {recipe.details}
   />
 }
 
 function App() {
   return (
     <div className="flex-container">
-    {contacts.map(createCard)};
+    {recipes.map(createCard)};
     </div>
   );
 }
