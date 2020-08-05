@@ -1,13 +1,13 @@
 import React from 'react';
-import Heading from './Heading';
-import List from './List';
+import Card from './Card';
 
 
 function App() {
   return (
-    <div>
-      <Heading />
-      <List />
+    <div className="flex-container">
+      <Card img = "https://picsum.photos/200" name = "Michelle" email="sleemichelle@" tel="01234"/>
+      <Card img = "https://picsum.photos/200" name = "Peter" email="sleepeter@" tel="12345"/>
+      <Card img = "https://picsum.photos/200" name = "Demi" email="sleedemi@" tel="23456"/>
     </div>
   );
 }
