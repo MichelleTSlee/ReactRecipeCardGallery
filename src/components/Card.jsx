@@ -1,14 +1,13 @@
 import React from 'react';
-
-const img = "https://images.freeimages.com/images/large-previews/b3d/flowers-1375316.jpg";
+import Picture from './Picture';
+import Details from './Details';
 
 function Card(props) {
   return (
     <div className = "card">
-      <img src={props.img} alt ="random image"/>
+      <Picture img = {props.img}  />
       <h2> {props.name} </h2>
-      <p> {props.email} </p>
-      <p> {props.tel} </p>
+      <Details email = {props.email}  tel = {props.tel} />
     </div>
   );
 }

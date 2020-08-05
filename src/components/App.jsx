@@ -1,13 +1,21 @@
 import React from 'react';
 import Card from './Card';
+import contacts from '../contacts';
 
+function createCard(contact) {
+  return <Card
+  key = {contact.id}
+  name={contact.name}
+  img = "https://picsum.photos/200"
+  email = {contact.email}
+  tel = {contact.tel}
+  />
+}
 
 function App() {
   return (
     <div className="flex-container">
-      <Card img = "https://picsum.photos/200" name = "Michelle" email="sleemichelle@" tel="01234"/>
-      <Card img = "https://picsum.photos/200" name = "Peter" email="sleepeter@" tel="12345"/>
-      <Card img = "https://picsum.photos/200" name = "Demi" email="sleedemi@" tel="23456"/>
+    {contacts.map(createCard)};
     </div>
   );
 }
